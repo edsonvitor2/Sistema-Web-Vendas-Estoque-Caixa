@@ -161,7 +161,7 @@ getPhoto(){
         if(file){
             fileReader.readAsDataURL(file);
         } else{
-            resolve("img/photofundosemimgksjidjertfsderffgtrecsdadekgtofkemorjfigtredswkfrmdnrgtioresdfwertkfdswdergtirejdsaqwephotofundosemimgksjidjertfsderffgtrecsdadekgtofkemorjfigtredswkfrmdnrgtioresdfwertkfdswdergtirejdsaqwe.png");
+            resolve("img/photofundosemimgksjidjertfsderffgtrecsdadekgtofkemorjfigtredswkfrmdnrgtioresdfwertkfdswdergtirejdsaqwe.png");
         }
         
     });
