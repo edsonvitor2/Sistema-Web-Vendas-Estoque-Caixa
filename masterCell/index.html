@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>MasterCell</title>
+    
+</head>
+<header>
+    <a name="produ"></a>
+    <div class="cabecalho">
+
+        <div class="logo"> 
+            <img src="img/MinhaLogo.png"class="logo2" width="200px">  
+        </div>
+        
+        <div class="pesquisa">
+            <a href="orden.html">
+                <button type="button">Ordem de Serviço</button>  
+            </a></div>
+        
+        <div class="estoque">
+        <a href="estoque.html">
+            <button type="button">Estoque</button>  
+        </a></div>
+        
+        <div class="caixa">
+        <a href="caixa.html">
+            <button type="button">Caixa</button>  
+        </a></div>
+    
+
+    </div>
+    
+    
+    
+</header>
+<body>
+    <br>
+    <h1>Vendas</h1>
+   <div class="status-caixa">
+    <p class="a">Status :</p><p id="status" class="b">CAIXA - FECHADO</p>
+   </div>
+   <div class="data-caixa">
+    <p>Data :</p><p id="data">00/00/0000</p>
+   </div>
+    
+    
+    <br>
+    <div class="scan"> 
+        <fieldset class="scan2"> <legend>Scan</legend> 
+        <input type="text" name="" id="barcode" onkeyup="obterScan()">
+        </fieldset>
+    </div>
+    <div class="boxProduto">
+        <h3>Produtos</h3>
+       
+    <div class="produto"> 
+        
+        <input type="search" onkeyup="pesquisar()" name="" id="pesquisa">
+        <a href="#vendas">
+
+        <table id="lista">
+            
+        </table>
+    </div></a></div>
+
+    <div class="venda">
+        <a name="vendas"></a>
+        <form action="" id="formDeVendas">
+            <h3>Vendas</h3>
+           <br>
+            <p>Nome:</p> <input class="FormVendaName" type="text" name="name" disabled id="name">
+            <br>
+            <p>Quantidade:</p> <input class="FormVendaQuantidade" onkeyup="obterValorX()" type="number" name="quantidade" id="qtd">
+            <br>
+            <p>Valor:</p> <input class="FormVendaValor" type="number" name="valor" id="value" disabled >
+            <br>
+            <p>Troco:</p> <input class="FormVendaTroco" type="number" onkeyup="obtertroco()" name="" id="troco"
+            >
+            <br>
+            <p>Voltar:</p> <input type="text" class="FormVendaVoltar" type="number"  id="volta">
+<br>
+<p>Forma de Pagamento</p> 
+    <input id="paga" type='option' class="pagamento" placeholder="Pagamento" list="pagamento">
+    <datalist id="pagamento">
+      <option value="credito">credito</option>
+      <option value="debito">debito</option>
+      <option value="dinheiro">dinheiro</option>
+      <option value="pix">pix</option>
+    </datalist>
+<a href="#car">
+    <button type="button" onclick="addProdutoCarrinho()"> Carrinho </button> 
+</a>
+<button type="button" onclick="vendaUnica()"> Venda </button>
+
+        </fieldset>
+        </form>
+    </div>
+<div class="box" name="car">
+<div class="carr">
+    
+    <h3>Carrinho</h3>
+    <ul id="car">
+    
+    </ul>
+    <div class="pagamentos">
+        Total <input type="text" class="inputCar" id="total">
+            
+        Troco <input type="text" id="CarTroco" class="inputCartroco" onkeyup="obterTrocoCarrinho()">
+            
+        Voltar <input type="text" id="CarVolta" class="inputCarvolta" disabled>
+            
+        <p>Forma de Pagamento</p> 
+        <input id="pag" type='option' class="pagamento" placeholder="Pagamento" list="pagamento">
+        <datalist id="pagamento">
+            <option value="credito">credito</option>
+            <option value="debito">debito</option>
+            <option value="dinheiro">dinheiro</option>
+            <option value="pix">pix</option>
+        </datalist>
+    
+        <button type="button" onclick="finalizarVendaCarrinho()"> Finalizar Venda </button>
+    </div>
+</div>
+    
+</div>
+
+    <div class="modos">
+
+        <div class="pro"> <a href="#produ">
+            <button>produto</button></a>
+        </div>
+
+        <div class="ven"> <a href="#vendas">
+            <button>Venda</button></a>
+        </div>
+
+        <div class="cari"> <a href="#car">
+            <button>carrinho</button></a>
+        </div>
+
+    </div>
+    
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script src="scripts/FireInit.js"></script>
+        
+<script src="scripts/index.js"></script>
+
+</body>
+</html>

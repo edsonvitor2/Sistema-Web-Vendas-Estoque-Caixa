@@ -1,0 +1,47 @@
+*{
+    font-size: 22px;
+    color: #000;
+}
+body{
+    background-color: #fde6b6;
+}
+button{
+   
+    background-color: #f5d087;
+    border-radius: 10px;
+}
+table{
+    border: solid 2px;
+    width: 100%;
+}
+th{
+    padding: 10px;
+    padding: 10px ;
+    background-color: #f5d087;
+}
+.pagamento{
+    width: 25%;
+}
+.troco{
+    width: 25%;
+}
+.volta{
+    width: 25%; 
+}
+.valor{
+    width: 25%;
+}
+.valortd{
+    width: 95%;
+    
+}
+.caixa{
+    width: 95%;
+    
+}
+td{
+    width: 20%;
+    padding: 10px ;
+    background-color: #f5d087;
+    
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas</title>
+    <link rel="stylesheet" href="css/vendas.css">
+   
+    <header> <h1>Controle Estoque</h1> </header>
+    <a href="caixa.html">
+    <button type="button" onclick="vendas.voltarCaixas()"> voltar </button>
+</a>
+<legend>Caixa</legend>
+<table>
+<tr>
+    <td>Fundo de caixa :<input class="caixa" disabled id="fundo" type="text"></td>
+    <td>Data :<input class="caixa" disabled id="data" type="text"></td>
+    <td>Status :<input class="caixa" disabled id="status" type="text"></td>
+</tr>
+<tr>
+    <td>Dinheiro : <input class="valortd" type="text" id="dinheiro" disabled></td>
+    <td>Debito : <input class="valortd" type="text" id="debito" disabled></td>
+    <td>Credito : <input class="valortd" type="text" id="credito" disabled></td>
+    <td>Pix : <input class="valortd" type="text" id="pix" disabled></td>
+    <td>Total : <input class="valortd" type="text" id="total" disabled></td>
+</tr>
+</table>
+<br>
+</fieldset>
+</head>
+<body>
+<main>  
+    <table>
+            
+        <thead class="borda">
+            <tr>
+                <th class="pagamento">Pagamento</th>
+                <th class="troco">Troco</th>
+                <th class="volta">Volta</th>
+                <th class="valor">VALOR</th>
+            </tr> 
+        </thead>
+        
+    <table id="tabela" class="borda">
+        <br>
+            
+    </table>
+</table>
+</main> 
+
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script src="scripts/FireInit.js"></script>
+<script src="scripts/vendas.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,458 @@
+*{
+    color: #000;
+    font-size: 18.5px;
+}
+body{
+    background-color: #fde6b6;
+}
+.senhas{
+    width: 100%;
+    height: 200px;
+}
+
+.senha2{
+    width: 35%;
+    height: 50px;
+    float: left;
+    margin: 12px;
+}
+.senha3{
+    width: 20%;
+    height: 50px;
+    float: left;
+    margin: 12px;
+}
+.pin2{
+    width: 30%;
+    height: 50px;
+    float: left;
+    margin: 12px;
+}
+.s{
+    height: 40px;
+}
+.b{
+    height: 50px;
+    width: 10%;
+    border: solid;
+    border-radius: 30px;
+}
+
+#Enviardados{
+    width: 100%;
+}
+input{
+    width: 99%;
+    color: #000;
+    background-color:#f5d087;
+}
+div.form{
+    width: 100%;
+}
+div.nome{
+    width: 9.5%;
+    float: left;
+    margin-top: 10px;
+}
+div.input-nome{
+    width: 82.5%;
+    float: left;
+    margin-top: 10px;  
+}
+div.telefone{
+    width: 9.5%;
+    float: left;
+    margin-top: 10px;
+}
+div.input-telefone{
+    width: 82.5%;
+    float: left;
+    margin-top: 10px;
+}
+div.endereço{
+    width: 9.5%;
+    float: left;
+    margin-top: 10px;
+}
+div.input-endereço{
+    width: 82.5%;
+    float: left;
+    margin-top: 10px;
+}
+div.modelo{
+    width: 9.5%;
+    float: left;
+    margin-top: 10px;
+}
+div.input-modelo{
+    width: 40%;
+    float: left;
+    margin-top: 10px;
+}
+div.valor{
+    width: 6%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+div.input-valor{
+    width: 15%;
+    float: left;
+    margin-top: 10px;
+}
+div.data{
+    width: 5%;
+    float: left;
+    margin-left: 10.5px;
+    margin-top: 10px;
+}
+div.input-data{
+    width: 14%;
+    float: left;
+    margin-top: 10px;
+    margin-right: 5%;
+}
+div.senha{
+    width: 9.5%;
+    float: left;
+    margin-top: 10px;
+}
+div.input-senha{
+    width: 14%;
+    float: left;
+    margin-top: 10px;
+}
+div.pin{
+    width: 5%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+div.input-pin{
+    width: 14%;
+    float: left;
+    margin-top: 10px;
+}
+div.descricao{
+    width:70%;
+    float: left;
+}
+div.descricao{
+    width:98%;
+    float: left;
+   
+}
+textarea{
+    height: 100px;
+    width: 91%;
+    background-color:#f5d087;
+}
+div.botao{
+    width: 10%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+button{
+    color: #000;
+    background-color:#f5d087;
+}
+
+div.main{
+    border: solid;
+    width: 70%;
+    margin-left: 13%;
+    padding: 2px;
+    height: 1400px;
+}
+table{
+    border: solid 1px;
+    width: 100%;
+}
+td{
+    border: solid 1px ;
+    font-size: 14px;
+}
+.img{
+    width: 99%;
+    float: left;
+}
+div.nome2{
+    width: 12%;
+    float: left;
+    margin-top: 10px;
+}
+div.input-nome2{
+    width: 82.5%;
+    float: left;
+    margin-top: 10px;
+    background-color: #f5d087;
+    border: solid 1px;
+}
+div.telefone2{
+    width: 12%;
+    float: left;
+    margin-top: 10px;
+}
+div.input-telefone2{
+    width: 82.5%;
+    float: left;
+    margin-top: 10px;
+    background-color: #f5d087;
+    border: solid 1px;
+}
+div.endereço2{
+    width: 12%;
+    float: left;
+    margin-top: 10px;
+}
+div.input-endereço2{
+    width: 82.5%;
+    float: left;
+    margin-top: 10px;
+    background-color: #f5d087;
+    border: solid 1px;
+}
+div.modelo2{
+    width: 12%;
+    float: left;
+    margin-top: 10px;
+}
+div.input-modelo2{
+    width: 40%;
+    float: left;
+    margin-top: 10px;
+    background-color: #f5d087;
+    border: solid 1px;
+}
+div.valor2{
+    width: 8%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+div.input-valor2{
+    width: 10.5%;
+    float: left;
+    margin-top: 10px;
+    background-color: #f5d087;
+    border: solid 1px;
+}
+div.data2{
+    width: 7%;
+    float: left;
+    margin-left: 10.5px;
+    margin-top: 10px;
+}
+div.input-data2{
+    width: 12%;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: #f5d087;
+    border: solid 1px;
+}
+@media screen and (max-width: 700px)  {
+    div.main{
+        border: solid;
+        width: 93%;
+        margin-left: 2%;
+        padding: 2px;
+        height: 1800px;
+    }
+    div.nome{
+        width: 35%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.input-nome{
+        width: 90%;
+        float: left;
+        margin-top: 10px;  
+    }
+    div.telefone{
+        width: 35%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.input-telefone{
+        width: 90%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.endereço{
+        width: 35%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.input-endereço{
+        width: 90%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.modelo{
+        width: 35%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.input-modelo{
+        width: 90%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.valor{
+        width: 23%;
+        float: left;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    div.input-valor{
+        width: 20%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.data{
+        width: 18%;
+        float: left;
+        margin-left: 10.5px;
+        margin-top: 10px;
+    }
+    div.input-data{
+        width: 25%;
+        float: left;
+        margin-top: 10px;
+        margin-right: 5%;
+    }
+    div.senha{
+        width: 23%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.input-senha{
+        width: 25%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.pin{
+        width: 14%;
+        float: left;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    div.input-pin{
+        width: 25%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.descricao{
+        width:70%;
+        float: left;
+    }
+    div.descricao{
+        width:98%;
+        float: left;
+       
+    }
+    textarea{
+        height: 100px;
+        width: 91%;
+        background-color:#f5d087;
+    }
+    div.botao{
+        width: 40%;
+        float: left;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    img{
+        width: 368px;
+    }
+    div.nome2{
+        width: 35%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.input-nome2{
+        width: 90%;
+        float: left;
+        margin-top: 10px;  
+    }
+    div.telefone2{
+        width: 35%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.input-telefone2{
+        width: 90%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.endereço2{
+        width: 35%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.input-endereço2{
+        width: 90%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.modelo2{
+        width: 35%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.input-modelo2{
+        width: 90%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.valor2{
+        width: 23%;
+        float: left;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    div.input-valor2{
+        width: 20%;
+        float: left;
+        margin-top: 10px;
+    }
+    div.data2{
+        width: 18%;
+        float: left;
+        margin-left: 10.5px;
+        margin-top: 10px;
+    }
+    div.input-data2{
+        width: 25%;
+        float: left;
+        margin-top: 10px;
+        margin-right: 5%;
+    }
+    .senhas{
+        width: 100%;
+        height: 250px;
+    }
+    
+    .senha2{
+        width: 30%;
+        height: 10px;
+        float: left;
+        margin: 12px;
+    }
+    .senha3{
+        width: 20%;
+        height: 10px;
+        float: left;
+        margin: 12px;
+    }
+    .pin2{
+        width: 30%;
+        height: 10px;
+        float: left;
+        margin: 12px;
+    }
+
+}

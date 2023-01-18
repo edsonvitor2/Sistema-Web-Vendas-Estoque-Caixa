@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link rel="stylesheet" href="css/estoque.css">
+</head> 
+<header> 
+    <a href="index.html">
+        <button type="button" class="back"> voltar </button>
+        </a>
+    <h1 class="titulo">Controle Estoque</h1>
+    
+</header>
+
+<body>
+    <main>
+    <div>
+        
+    </div>
+    <div class="CadastroProduto">
+        <h1>Cadastro De Produtos</h1>
+        <form action="" id="formDeProdutos">
+            <div id="codigo">
+                <label for=""> Codigo de Barra </label>
+                <input type="text" id="barcode" placeholder="produto" name="barcode" >
+            </div>
+    
+            <div id="prod">
+                <label for=""> Produto </label>
+                <input type="text" id="produto" placeholder="produto" name="name">
+            </div>
+            <div id="qtn">
+                <label for=""> Quantidade </label>
+                <input type="text" id="NumeroProduto" placeholder="Quantidade" name="quantidade">
+            </div>
+    
+            <div id="val">
+                <label for=""> Valor Saida </label>
+                <input type="text" id="valor" placeholder="valor Saida" name="valor">
+            </div>
+    
+            <div id="valEntrada">
+                <label for=""> Valor Entrada</label>
+                <input type="text" id="valorEntrada" placeholder="valor Entrada"name="valorEntrada">
+            </div>
+
+            <div id="photo">
+                <label for=""> Foto </label>
+                <input type="file" class="image"
+                name="photo">
+            </div>
+           
+            <button type="submit" id="btn">salvar</button>
+            <button type="button">Cancelar</button>
+            <button type="button" id="editorProd">Editor de Produtos</button>
+            
+        </form>
+    </div>
+    <div class="EditorDeProduto">
+        <h1 class="tituloEditor">Editor De Produtos</h1>
+        <button class="fecharEditor" type="button">X</button>
+        <form action="" id="EditorDeformDeProdutos">
+            <div id="codigo">
+                <label for=""> Codigo de Barra </label>
+                <input type="text" id="barcode-Editor" placeholder="produto" name="barcode" >
+            </div>
+    
+            <div id="prod">
+                <label for=""> Produto </label>
+                <input type="text" id="produto-Editor" placeholder="produto" name="name">
+            </div>
+            <div id="qtn">
+                <label for=""> Quantidade </label>
+                <input type="text" id="NumeroProduto-Editor" placeholder="Quantidade" name="quantidade">
+            </div>
+    
+            <div id="val">
+                <label for=""> Valor Saida </label>
+                <input type="text" id="valor-Editor" placeholder="valor Saida" name="valor">
+            </div>
+    
+            <div id="valEntrada">
+                <label for=""> Valor Entrada</label>
+                <input type="text" id="valorEntrada-Editor" placeholder="valor Entrada"name="valorEntrada">
+            </div>
+            <div>
+                <img src="img/photofundosemimgksjidjertfsderffgtrecsdadekgtofkemorjfigtredswkfrmdnrgtioresdfwertkfdswdergtirejdsaqwephotofundosemimgksjidjertfsderffgtrecsdadekgtofkemorjfigtredswkfrmdnrgtioresdfwertkfdswde.png" alt="" class="photoUp" style="max-height: 128px;">
+            </div>
+
+            <div id="photo">
+                <label for=""> Foto </label>
+                <input type="file" id="add-Photo" class="image-Editor"
+                name="">
+            </div>
+           
+            <button type="submit" id="btn">salvar</button>
+            
+        </form>
+    </div>
+    <div class="BoxSenha">
+        <button id="fechar" class="fechar">X</button>
+        <h1>Digite sua senha</h1>
+        <input type="text" name="password" id="password">
+        <br>
+        <button id="confirmar" class="confirm">Confirmar</button>
+    </div>
+    <br>
+    <table>
+        
+    <thead class="borda">
+    <tr>
+    <th><img src="img/photofundosemimgksjidjertfsderffgtrecsdadekgtofkemorjfigtredswkfrmdnrgtioresdfwertkfdswdergtirejdsaqwephotofundosemimgksjidjertfsderffgtrecsdadekgtofkemorjfigtredswkfrmdnrgtioresdfwertkfdswde.png" alt=""class="photo" id="img"></th>
+    <th class="id">ID</th>
+    <th class="name">PRODUTO</th>
+    <th class="qtd">QUANTIDADE</th>
+    <th class="valor">VALOR ENTRADA</th>
+    <th class="valor">VALOR SAIDA</th>
+    <th class="valor">LUCRO</th>
+    </tr>
+        
+    </thead>
+            
+        <table id="tabela" class="borda">
+                
+        </table>
+    </table>
+</main>
+        
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script src="scripts/FireInit.js"></script>
+        
+<script src="scripts/models/produto.js"></script>
+<script src="scripts/controllers/controllerProduct.js"></script>
+<script src="scripts/form.js"></script>
+
+</body>
+</html>

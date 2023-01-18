@@ -1,0 +1,449 @@
+*{
+    font-size: 18px;
+    color: #000;
+}
+.listas{
+    width: 350px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.photo{
+    height: 60px;
+    float:left;
+    margin-top: 0px;
+}
+.nomeItem{
+    padding-top: 15px;
+}
+h1{
+    text-align: center;
+    margin-top: -10px;
+}
+header{
+    width: 99%;
+    height: 70px;
+    border: solid;
+}
+.cabecalho{
+    width: 98%;
+}
+.logo{
+    float: left;
+}
+div.pesquisa{
+    float: left;
+    width: 24%;
+    padding: 20px 0px 10px 10px;
+    text-align: center;
+}
+.estoque{
+    float: left;
+    width: 24%;
+    padding: 20px 0px 10px 10px;
+    text-align: center;
+}
+.caixa{
+    float: left;
+    width: 24%;
+    padding: 20px 0px 10px 10px;
+    text-align: center;
+}
+
+input{
+    width: 50%;
+    background-color: #f5d087;
+    border-radius: 10px 20px 30px;
+    border: solid #011324;
+}
+
+body{
+    background-color: #fde6b6 ;
+    overflow: hidden;
+}
+.scan{
+    width: 33%;
+
+    margin-top:-30px;
+    padding-left:-90px;
+}.scan2{
+    margin-top:0px;
+    padding-left:-90px;
+}
+.produto{
+    width: 98%;
+    margin-right:15px ;
+    float: left;
+}
+.venda{
+    margin: 10px;
+    padding: 10px;
+    padding-top: 0px;
+    width: 30%;
+    margin-right:15px ;
+    float: left;
+    border: solid 1px rgb(153, 143, 143);
+}
+
+button{
+    background: #f5d087;
+    color: #000;
+    border-radius: 10px;
+    
+}
+.FormVendaName{
+    width: 51%;
+    color: #000;
+    margin-left: 40px;
+    margin-top:10px;
+}.FormVendaQuantidade{
+    width: 51%;
+    margin-top:10px;
+    margin-left: 0px;
+    color: #000;
+}
+.FormVendaValor{
+    width: 51%;
+    margin-left: 43px;;
+    margin-top:10px;
+    color: #000;
+}
+.FormVendaTroco{
+    width: 51%;
+    margin-left: 40px;;
+    margin-top:10px;
+    color: #000;
+}
+.FormVendaVoltar{
+    padding: 2px;
+    width: 51%;
+    height: 20px;
+    margin-top:10px;
+    margin-left: 40px;;
+    color: #000;
+    border: solid;
+    background-color: #f5d087;
+    border-radius: 10px 20px 30px;
+}
+.carrinhoname{
+    width: 70%;
+    color: #000;
+}
+.carrinhoqtd{
+    width: 60%;
+    color: #000;
+}
+.carrinhoValor{
+    width: 78%;
+    color: #000;
+}
+.inputCar{
+    width: 80%;
+    color: #000;
+    margin-left: 10px;
+}
+.inputCartroco{
+    width: 80%;
+    color: #000;
+    margin-left: 5px;
+}
+.inputCarvolta{
+    width: 80%;
+    color: #000;
+    margin-left: 5px;
+}
+.pagamento{
+    width: 80%;
+    color: #000;
+}
+hr{
+    position:absolute;
+    width: 300px;
+}
+li{
+    list-style: none;
+}
+p.a{
+    width: 5%;
+}
+.b{
+    width: 80%;
+}
+p{
+    padding-top:10px;
+    margin: 2px;
+    float: left;
+}
+ul{
+    padding: 0;
+    font-size: 12px;
+}
+.total{
+    margin-left: 100px;
+}
+.modos{
+    width: 100%;
+    margin-left: -10px;
+    border: solid;
+    position: fixed;
+    background-color: #000;
+    top: 92%;
+    display: none;
+}
+.pro{
+    float: left;
+    margin-left: 17%;
+    width: 30%;
+    padding: 10px 5px 10px 5px;
+}
+.ven{
+    float: left;
+    width: 30%;
+    padding: 10px 5px 10px 5px;
+}
+.cari{
+    float: left;
+    width: 10%;
+   padding: 10px 5px 10px 5px;
+}
+
+.box {
+    border: solid 1px rgb(153, 143, 143);
+    float: left;
+    width: 29%;
+	height: 300px;
+	overflow-y: scroll;
+    margin: 10px;
+    padding: 10px;
+  }
+  .box::-webkit-scrollbar {
+	  display: none;
+      width: 10px;
+  }
+  .box {
+	-ms-overflow-style: none; 
+	scrollbar-width: none;
+  }
+  .boxProduto {
+    margin: 10px;
+    padding:10px;
+    border: solid 1px rgb(153, 143, 143);
+    float: left;
+    width: 30%;
+	height: 300px;
+	overflow-y: scroll;
+  }
+  .boxProduto::-webkit-scrollbar {
+	  display: none;
+      width: 10px;
+  }
+  .boxProduto {
+	-ms-overflow-style: none; 
+	scrollbar-width: none;
+  }
+
+
+@media screen and (max-width: 900px) { 
+    .scan{
+       float: left;
+       width: 90%;
+    }   
+    .produto{
+       float: left;
+       width: 90%;
+       margin-bottom: 800px;
+    }    
+    h3{
+       text-align: center;
+    }
+    .boxProduto{
+       padding: 3px;
+       margin-left: 0px;
+       border: solid 1px;
+       float: left;
+       width: 30%;
+       height: 350px;
+       overflow-y: scroll;
+       margin-bottom: 150px;
+    }
+    .venda{
+        float: left;
+        width: 30%;
+        margin-bottom: 990px;
+        margin-left: 0px;
+        padding: 3px;
+        border: solid;
+     }  
+    .box {
+       padding: 3px;
+       margin-left: 0px;
+       border: solid 1px;
+       float: left;
+       width: 30%;
+       height: 500px;
+       overflow-y: scroll;
+       margin-bottom: 250px;
+     }
+    p.a{
+       float: left;
+       width: 15%;
+    }
+    .logo{
+       float: left;
+       width: 26%;
+       padding: 15px 0px 10px 10px;
+       text-align: center;
+   }
+   .pesquisa{
+       float: left;
+       width: 20%;
+       padding: 12px 0px 10px 10px;
+       text-align: center;
+   }
+   .estoque{
+       float: left;
+       width: 20%;
+       padding: 15px 0px 10px 10px;
+       text-align: center;
+   }
+   .caixa{
+       float: left;
+       width: 20%;
+       padding: 15px 0px 10px 10px;
+       text-align: center;
+   }header{
+       width: 99%;
+       height: 90px;
+       border: solid;
+   }
+
+   body{
+    background-color: #fde6b6 ;
+    overflow: auto;
+    }
+    .FormVendaName{
+        width: 90%;
+        color: #000;
+        margin-left: 0px;
+        margin-top: -50px;
+    }.FormVendaQuantidade{
+        width: 90%;
+        margin-left: 0px;
+        color: #000;
+    }
+    .FormVendaValor{
+        width: 90%;
+        margin-left: 0px;
+        color: #000;
+    }
+    .FormVendaTroco{
+        width: 90%;
+        margin-left: 0px;
+        color: #000;
+    }
+    .FormVendaVoltar{
+        width: 90%;
+        margin-left: 0px;
+        color: #000;
+    }
+
+    p{
+        margin: 2px;
+    }
+   }
+   @media screen and (max-width: 700px) { 
+    .scan{
+       float: left;
+       width: 90%;
+    }   
+    .produto{
+       float: left;
+       width: 90%;
+       margin-bottom: 800px;
+    }   
+    .venda{
+       float: left;
+       width: 90%;
+       margin-bottom: 990px;
+    }   
+    h3{
+       text-align: center;
+    }
+    .boxProduto{
+       padding: 10px;
+       margin-left: 10px;
+       border: solid 1px;
+       float: left;
+       width: 90%;
+       height: 350px;
+       overflow-y: scroll;
+       margin-bottom: 150px;
+    }
+    .box {
+       padding: 10px;
+       margin-left: 10px;
+       border: solid 1px;
+       float: left;
+       width: 90%;
+       height: 500px;
+       overflow-y: scroll;
+       margin-bottom: 250px;
+     }
+    p.a{
+       float: left;
+       width: 15%;
+    }
+    .logo{
+       float: left;
+       width: 25%;
+       padding: 25px 0px 10px 0px;
+       text-align: center;
+   }
+   .logo2{
+       width: 100%;
+   }
+   .pesquisa{
+       float: left;
+       width: 20%;
+       padding: 25px 0px 10px 0px;
+       text-align: center;
+   }
+   .estoque{
+       float: left;
+       width: 20%;
+       padding: 25px 0px 10px 0px;
+       text-align: center;
+   }
+   .caixa{
+       float: left;
+       width: 20%;
+       padding: 25px 0px 10px 0px;
+       text-align: center;
+   }header{
+       width: 99%;
+       height: 90px;
+       border: solid;
+   }
+   .modos{
+       width: 100%;
+       border: solid;
+       position: fixed;
+       display: block;
+   }
+   .pro{
+       float: left;
+       margin-left: 10%;
+       width: 30%;
+   }
+   .ven{
+       float: left;
+       width: 30%;
+   }
+   .cari{
+       float: left;
+       width: 10%;
+   }
+   body{
+       background-color: #fde6b6 ;
+       overflow: hidden;
+       }
+   }

@@ -1,0 +1,25 @@
+*{
+    color: #000;
+}
+td{
+    border: solid 2px;
+    width: 150px;
+    padding: 10px ;
+    background-color: #f5d087;
+}
+button{
+    width: 150px;
+    background-color: #fde6b6; 
+}
+table{
+    border: solid 3px;
+    border-collapse:separate; 
+    border-spacing: 5px 20px;
+}
+body{
+    background-color: #fde6b6;
+}
+input{
+    background-color: #fde6b6; 
+    
+}

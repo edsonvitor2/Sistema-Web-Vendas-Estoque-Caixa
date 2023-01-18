@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    color: #000;
+}
+header{
+    background-color:#f5d087;
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+}
+.titulo{
+    width: 400px;
+    float: left;
+    margin-left:28% ;
+}
+.back{
+    margin: 10px 0px 0px 50px;
+    border: solid;
+    float: left;
+}
+button{
+    color: #000000;
+}
+main{
+    padding: 30px 30px;
+
+}
+body{
+    background-color: #fde6b6;
+}
+div#prod{
+    padding: 10px 10px 10px 0px;
+    /*margin-left: -40px;*/
+}
+div#qtd{
+     padding: 10px 10px 10px 0px;
+}
+div#val{
+    padding: 10px 10px 10px 0px;
+}
+table{
+    border: 1px solid;
+    width: 100%;
+}
+.borda{
+    border: 1px solid;
+    
+}
+tr{
+    width: 100%;
+}
+.id{
+    width: 20%;
+}
+.name{
+    width: 35%;
+}
+.valor{
+    width: 10%;
+}
+.photo{
+    width: 5%;
+}
+.qtd{
+    width: 10%;
+}
+table th{
+    width: 20px;
+    padding: 10px;
+    border: 1px solid #fde6b6;
+    background-color: #f5d087;
+    text-align: left;
+}
+td{
+    width: 20px;
+    padding: 10px;
+    border: 1px solid #fde6b6;
+    background-color: #f5d087;
+    text-align: left;  
+}
+.center{
+    text-align: left;
+}
+input{
+    color: #000000;
+}
+
+#photo{
+    margin: 10px 0px 10px 0px;
+}
+.photo{
+    width: 50px;
+}
+.BoxSenha{
+    border: solid 1px #493a3a;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px;
+    width: 400px;
+    margin-left: 37%;
+    transform: translateX(-500%);
+    text-align: center;
+    background-color: #f5d087;
+    padding: 20px;
+    transition: transform 0.3s ease-in;
+}
+input#password{
+    background-color: #fde6b6;
+    margin-top: 30px;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 24px;
+}
+button.confirm{
+    margin-top: 30px;
+    background-color: #f5d087;
+    border: solid 1px #493a3a;
+    box-shadow: 1px 1px 1px 1px #493a3a;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.fechar{
+    background-color: #f5d087;
+    border: solid 1px #493a3a;
+    box-shadow: 1px 1px 1px 1px #493a3a;
+    border-radius: 20px;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 50%;
+    top: -15px;
+    cursor: pointer;
+}
+.CadastroProduto{
+    border: solid;
+    border-radius: 20px;
+    width: 400px;
+    background-color: #f5d087;
+    padding: 10px;
+    float: left;
+
+}
+.EditorDeProduto{
+    margin-left: 73%;
+    border: solid;
+    border-radius: 20px;
+    width: 400px;
+    background-color: #f5d087;
+    padding: 10px;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease-in;
+}
+.tituloEditor{
+    float: left;
+    padding-right: 99px;
+}
+.fecharEditor{
+    font-size: 24px;
+    background-color: #fde6b6;
+    border: solid 1px #000;
+    box-shadow: 1px 1px 1px 1px #000;
+    border-radius: 40px;
+    cursor: pointer;
+}
+

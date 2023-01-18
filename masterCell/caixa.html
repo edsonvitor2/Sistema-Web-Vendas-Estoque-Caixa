@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/caixa.css">
+    <title>caixas</title>
+</head>
+<body onload=""> 
+<h1>caixas</h1>
+
+
+    
+<div>
+    <form action="">
+      <fieldset>
+        <legend>Abrir Caixa</legend>
+        <p>Data</p> 
+        <input type="text" id="data" onkeyup="caixa.formatDate()" maxlength="14">
+        <p>Fundo de caixa </p>
+        <input type="text" id="fundo">
+        <br>
+        <br>
+        <a href="index.html">
+            <button type="button">Voltar</button>  
+        </a>
+        
+        <button type="button" onclick="caixa.enviarDados()"> Abrir caixa </button>
+      </fieldset>
+    </form>
+</div>
+<div class="mes">
+<button onclick="caixa.listarDados('janeiro')">1</button>
+<button onclick="caixa.listarDados('fevereiro')">2</button>
+<button onclick="caixa.listarDados('março')">3</button>
+<button onclick="caixa.listarDados('abril')">4</button>
+<button onclick="caixa.listarDados('maio')">5</button>
+<button onclick="caixa.listarDados('junho')">6</button>
+<button onclick="caixa.listarDados('julho')">7</button>
+<button onclick="caixa.listarDados('agosto')">8</button>
+<button onclick="caixa.listarDados('setembro')">9</button>
+<button onclick="caixa.listarDados('outubro')">10</button>
+<button onclick="caixa.listarDados('novembro')">11</button>
+<button onclick="caixa.listarDados('dezembro')">12</button>
+</div>
+<div>
+    <fieldset>
+        <legend>Caixas Anteriores</legend>
+        <table class="tabela" id="tabela">
+            <tr>
+                <td class="data">DATA: 00/00/00</td>
+                <td class="fundo">FUNDO : 000,00</td>
+                <td class="total">TOTAL VENDIDO: 0,00</td> 
+                <td class="id">ID: 00</td>
+                
+            </tr>
+           
+        </table>
+      </fieldset>
+</div>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script src="scripts/FireInit.js"></script>
+
+<script src="scripts/caixa.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+*{
+    margin: 10px;
+    color: #000;
+}
+body{
+    background-color: #fde6b6;
+}
+td{
+    padding: 10px ;
+    background-color: #f5d087;
+    
+}
+.tabela{
+    padding: 10px;
+    border: solid 2px ;
+    width: 100%;
+}
+.data{
+    border: solid 2px;
+    width: 25%;
+}
+.fundo{
+    border: solid 2px;
+    width: 25%;
+}
+.total{
+    border: solid 2px;
+    width: 25%;
+}
+.id{
+    border: solid 2px;
+    width:25%;
+}
+input{
+    color: #000;
+}
+button{
+color: #000;
+margin: 0;
+margin-left: 0;
+background-color: #f5d087; 
+border-radius: 10px;
+}

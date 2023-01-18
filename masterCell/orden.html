@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem de serviço</title>
+    <link rel="stylesheet" href="css/os.css">
+</head>
+<header>
+    <a  href="index.html">
+        <button type="button">Voltar</button>  
+    </a>
+    <a  href="ordensAntigas.html">
+        <button type="button">Ordens Antigas</button>  
+    </a>
+
+<form action="" id="Enviardados">
+<fieldset>
+
+<legend>Ordem de Serviço</legend>
+
+<div class="form">
+
+    <div class="nome">NOME :</div>
+    <div class="input-nome"> 
+    <input type="text" id="name"> </div>
+
+    <div class="telefone">TELEFONE :</div>
+    <div class="input-telefone"> 
+    <input type="text"id="telefone"onkeyup="formatCell()" maxlength="14"> </div>
+
+    <div class="endereço">ENDEREÇO :</div> 
+    <div class="input-endereço">
+    <input type="text"id="endereço"> </div>
+
+    <div class="modelo">MODELO :</div>
+    <div class="input-modelo"> 
+    <input type="text" id="modelo"> </div>
+
+    <div class="valor">VALOR :</div>
+    <div class="input-valor"> 
+    <input type="text"id="valor"> </div>
+
+    <div class="data">DATA :</div>
+    <div class="input-data"> 
+    <input type="text" id="data" maxlength="10" onkeyup="formatDate()" > </div>
+
+    <div class="senha">SENHA :</div>
+    <div class="input-senha"> 
+    <input type="text" id="senha"> </div>
+
+    <div class="pin">PIN :</div>
+    <div class="input-pin"> 
+    <input type="text" id="pin"> </div>
+
+    <div class="descricao">DESCRIÇÃO:</div>
+    <div class="input-descricao"> 
+    <textarea type="text" id="descricao"> 
+    </textarea>
+    </div>
+<div class="botao">
+    <input type="button" value="Gerar Ordem" onclick="setarDados()">
+</div>
+</fieldset>
+</form>
+</header>
+<body>
+    
+
+<div id="main" class="main">
+    <div class="img">
+        <img src="img/logo.jpg">
+        </div>
+    <div class="form1">
+        <form action="">
+            NOME 
+            <div id="oS-name2"></div>
+        </form>
+    </div>
+<div>
+<table>
+<tr>
+    <td class="name">Serviço</td>
+    <td class="check">x</td>
+    <td class="name">Serviço</td>
+    <td class="check">x</td>
+    <td class="name">Serviço</td>
+    <td class="check">x</td>
+</tr>
+<tr>
+    <td class="name">Troca de Tela</td>
+    <td class="check" onclick="marcar('1')" id="1"></td>
+    <td class="name">Não Pega Rede</td>
+    <td class="check" onclick="marcar('2')" id="2"></td>
+    <td class="name">Remover Conta</td>
+    <td class="check" onclick="marcar('3')" id="3"></td>
+</tr>
+<tr>
+    <td class="name"> Celular Não Carrega</td>
+    <td class="check" onclick="marcar('4')" id="4"></td>
+    <td class="name">Celular Molhou</td>
+    <td class="check" onclick="marcar('5')" id="5"></td>
+    <td class="name">Troca Bateria</td>
+    <td class="check" onclick="marcar('6')" id="6"></td>
+</tr>
+<tr>
+    <td class="name">Software</td>
+    <td class="check" onclick="marcar('7')" id="7"></td>
+    <td class="name">Desliga e Não Liga</td>
+    <td class="check" onclick="marcar('8')" id="8"></td>
+    <td class="name">Aquecimento</td>
+    <td class="check" onclick="marcar('9')" id="9"></td>
+</tr>
+<tr>
+    <td class="name">App e Armazenamento</td>
+    <td class="check" onclick="marcar('10')" id="10"></td>
+    <td class="name">Troca de Componentes</td>
+    <td class="check" onclick="marcar('11')" id="11"></td>
+    <td class="name">Outros</td>
+    <td class="check" onclick="marcar('12')" id="12"></td>
+</tr>
+</table>
+<div>
+    <p>
+        OBS: Caso o proprietário não retire o aparelho no prazo de trinta dias será cpbrado uma taxa de 10%, caso ocorra de passar mais trinta dias será cobrado uma taxa de 20%.Após noventa dias o aparelho será vendido para arcar com as despesas gastas.
+    </p>
+    <p>
+        OBS: Em caso de serviço na placa ou substituição de bateria interna que o aparelho tenha que ser feita à remoção de tela."Pode haver danos na tela".
+    </p>
+    <p>
+        Para aparelhos a serem feitos Software corre risco de danos na placa ocorrendo a perca do aparelho.
+    </p>
+    <p>
+        Tendo este informado não nos responsabilizamos por nenhum dos fatos citados acima. Desde já a equipe MASTER CELL agradece pela preferencia!
+    </p>
+    <p>APARELHO ENTREGUE SOMENTE COM ESSA NOTA</p>
+<div id="for">
+<form action="">
+    <div class="nome2"> NOME :</div>
+    <div id="oS-name" class="input-nome2">--</div>
+
+    <div class="telefone2"> TELEFONE :</div>
+    <div id="oS-telefone" class="input-telefone2">--</div>
+        
+    </div>
+    <div class="endereço2"> ENDEREÇO :</div>
+    <div id="oS-endereco" class="input-endereço2">--</div>
+    
+    </div>
+    <div class="modelo2"> MODELO :</div>
+    <div id="oS-modelo" class="input-modelo2" >--</div>
+    
+    </div>
+
+    <div class="data2"> DATA :</div>
+    <div id="oS-data" class="input-data2" > --  </div>
+
+    <div class="valor2"> VALOR : </div>
+    <div class="input-valor2" id="oS-valor" > -- </div>
+
+</form>
+
+<div>
+    
+<table>
+    
+    <tr>
+        <td class="name">Serviço</td>
+        <td class="check">x</td>
+        <td class="name">Serviço</td>
+        <td class="check">x</td>
+        <td class="name">Serviço</td>
+        <td class="check">x</td>
+    </tr>
+    <tr>
+        <td class="name">Troca de Tela</td>
+        <td class="check" onclick="marcar('16')" id="16"></td>
+        <td class="name">Não Pega Rede</td>
+        <td class="check" onclick="marcar('17')" id="17"></td>
+        <td class="name">Remover Conta</td>
+        <td class="check" onclick="marcar('18')" id="18"></td>
+    </tr>
+    <tr>
+        <td class="name"> Celular Não Carrega</td>
+        <td class="check" onclick="marcar('19')" id="19"></td>
+        <td class="name">Celular Molhou</td>
+        <td class="check" onclick="marcar('20')" id="20"></td>
+        <td class="name">Troca Bateria</td>
+        <td class="check" onclick="marcar('21')" id="21"></td>
+    </tr>
+    <tr>
+        <td class="name">Software</td>
+        <td class="check" onclick="marcar('22')" id="22"></td>
+        <td class="name">Desliga e Não Liga</td>
+        <td class="check" onclick="marcar('23')" id="23"></td>
+        <td class="name">Aquecimento</td>
+        <td class="check" onclick="marcar('24')" id="24"></td>
+    </tr>
+    <tr>
+        <td class="name">App e Armazenamento</td>
+        <td class="check" onclick="marcar('13')" id="13"></td>
+        <td class="name">Troca de Componentes</td>
+        <td class="check" onclick="marcar('14')" id="14"></td>
+        <td class="name">Outros</td>
+        <td class="check"onclick="marcar('15')" id="15"></td>
+    </tr>
+</table>
+</div>
+<h2>Defeitos Visuais</h2>
+<div>
+<table class="tabela">
+    <tr>
+        <td class="name">Defeitos</td>
+        <td class="check">Sim</td>
+        <td class="check">Não</td>
+        <td class="check">Defeitos</td>
+        <td class="check">Sim</td>
+        <td class="check">Não</td>
+    </tr>
+    
+    <tr>
+        <td class="name"> Celular Não Carrega</td>
+        <td class="check" onclick="marcar('25')" id="25"></td>
+        <td class="check" onclick="marcar('26')" id="26"></td>
+        <td class="name">Botão Digital Não Funciona</td>
+        <td class="check" onclick="marcar('27')" id="27"></td>
+        
+        <td class="check" onclick="marcar('28')" id="28"></td>
+    </tr>
+    <tr>
+        <td class="name">Software</td>
+        <td class="check" onclick="marcar('29')" id="29"></td>
+        <td class="check" onclick="marcar('30')" id="30"></td>
+        <td class="name">Botão Home Não Funciona</td>
+        <td class="check" onclick="marcar('31')" id="31"></td>
+        
+        <td class="check" onclick="marcar('32')" id="32"></td>
+    </tr>
+    <tr>
+        <td class="name">App e Armazenamento</td>
+        <td class="check" onclick="marcar('33')" id="33"></td>
+        <td class="check" onclick="marcar('34')" id="34"></td>
+        <td class="name">Vidro Camera Quebrado</td>
+        <td class="check" onclick="marcar('35')" id="35"></td>
+        
+        <td class="check" onclick="marcar('36')" id="36"></td>
+    </tr>
+    <tr>
+        <td class="name">Troca de Tela</td>
+        <td class="check" onclick="marcar('37')" id="37"></td>
+        <td class="check" onclick="marcar('38')" id="38"></td>
+        <td class="name">Esta Dando Imagem</td>
+        <td class="check" onclick="marcar('39')" id="39"></td>
+        
+        <td class="check" onclick="marcar('40')" id="40"></td>
+    </tr>
+    <tr>
+        <td class="name">Troca de Tela</td>
+        <td class="check" onclick="marcar('41')" id="41"></td>
+        <td class="check" onclick="marcar('42')" id="42"></td>
+        <td class="name">Faltando Botões</td>
+        <td class="check" onclick="marcar('43')" id="43"></td>
+        <td class="check" onclick="marcar('44')" id="44"></td>
+    </tr>
+</table>
+</div>
+
+<div class="senhas">
+    
+<div class="senha2">
+    <h2>Senha</h2>
+    <table>
+        <tr>
+            <td class="s"></td>
+            <td class="s"></td>
+            <td class="s"></td>
+            <td class="s"></td>
+            <td class="s"></td>
+            <td class="s"></td>
+            <td class="s"></td>
+            <td class="s"></td>
+            <td class="s"></td>
+            <td class="s"></td>
+        </tr>
+    </table>
+</div>
+
+<div class="senha3">
+    <h2>Padrão</h2>
+    <table>
+        <tr>
+            <td class="b"></td>
+            <td class="b"></td>
+            <td class="b"></td>
+        </tr>
+        <tr>
+            <td class="b"></td>
+            <td class="b"></td>
+            <td class="b"></td>
+        </tr>
+        <tr>
+            <td class="b"></td>
+            <td class="b"></td>
+            <td class="b"></td>
+        </tr>
+    </table>
+</div>
+<div class="pin2">
+    <h2>Pin</h2>
+    <table>
+        <tr>
+            <td class="s"></td>
+            <td class="s"></td>
+            <td class="s"></td>
+            <td class="s"></td>
+            <td class="s"></td>
+            <td class="s"></td>
+        </tr>
+    </table>
+</div>
+
+</div>
+
+
+</div>
+    <input type="button" value="IMPRIMIR" onclick="pdf()">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" 
+    integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" 
+    crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script src="scripts/FireInit.js"></script>
+    <script src="scripts/os.js"></script>
+</body>
+</html>

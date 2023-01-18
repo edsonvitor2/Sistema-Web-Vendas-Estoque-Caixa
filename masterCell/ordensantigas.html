@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem de serviço</title>
+    <link rel="stylesheet" href="css/os.css">
+</head>
+<header>
+    <a  href="orden.html">
+        <button type="button">Voltar</button>  
+    </a>
+
+<form action="" id="Enviardados">
+<fieldset>
+
+<legend>Ordem de Serviço</legend>
+
+<div class="form">
+
+    <div class="nome">NOME :</div>
+    <div class="input-nome"> 
+    <input type="text" disabled id="name"> </div>
+
+    <div class="telefone">TELEFONE :</div>
+    <div class="input-telefone"> 
+    <input type="text" disabled id="telefone"onkeyup="formatCell()" maxlength="14"> </div>
+
+    <div class="endereço">ENDEREÇO :</div> 
+    <div class="input-endereço">
+    <input type="text" disabled id="endereço"> </div>
+
+    <div class="modelo">MODELO :</div>
+    <div class="input-modelo"> 
+    <input type="text" disabled id="modelo"> </div>
+
+    <div class="valor">VALOR :</div>
+    <div class="input-valor"> 
+    <input type="text" disabled id="valor"> </div>
+
+    <div class="data">DATA :</div>
+    <div class="input-data"> 
+    <input type="text" disabled id="data" maxlength="10" onkeyup="formatDate()" > </div>
+
+    <div class="senha">SENHA :</div>
+    <div class="input-senha"> 
+    <input type="text" disabled id="senha"> </div>
+
+    <div class="pin">PIN :</div>
+    <div class="input-pin"> 
+    <input type="text" disabled id="pin"> </div>
+
+    <div class="descricao">DESCRIÇÃO:</div>
+    <div class="input-descricao"> 
+    <textarea type="text" disabled id="descricao"> 
+    </textarea>
+    </div>
+
+</fieldset>
+</form>
+</header>
+<body>
+    <h1>Pesquise aqui</h1>
+<input type="search" onkeyup="pesquisa()" name="" id="pesquisa">
+  <div id="lista"></div>  
+
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script src="scripts/FireInit.js"></script>
+    <script src="scripts/os.js"></script>
+</body>
+</html>
