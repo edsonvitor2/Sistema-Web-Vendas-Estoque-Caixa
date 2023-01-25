@@ -150,7 +150,7 @@ button.confirm{
     width: 400px;
     background-color: #f5d087;
     padding: 10px;
-    transform: translateY(-200%);
+    transform: translateY(0%);
     transition: transform 0.3s ease-in;
 }
 .tituloEditor{

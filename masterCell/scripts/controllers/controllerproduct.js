@@ -16,11 +16,25 @@ class ProductController{
     }
 
 initButtons(){
+    let excluir = document.getElementById("excluir");
+
     let EditorProdutos = document.getElementById("editorProd");
 
     let fecharEditor = document.querySelector(".fecharEditor");
 
     let ConfirmSenha = document.getElementById("confirmar");
+
+excluir.addEventListener("click", e =>{
+console.log("ecluir")
+firebase.database().ref("produto").child(this.keyChange).remove();
+
+document.querySelector("#barcode-Editor").value ="";
+document.querySelector("#produto-Editor").value = "";
+document.querySelector("#NumeroProduto-Editor").value = "";
+document.querySelector("#valor-Editor").value =
+"";document.querySelector("#valorEntrada-Editor").value = ""; 
+document.querySelector(".photoUp").src = "";
+})
 
     let fechar = document.getElementById("fechar");
 
